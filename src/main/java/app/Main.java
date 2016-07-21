@@ -12,7 +12,8 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
         Main piTransformBean = new Main();
-        piTransformBean.sendSignal(11111, 11111, "11111");
+
+        piTransformBean.sendSignal(Integer.parseInt(args[0]), Integer.parseInt(args[1]), args[2]);
 
     }
 
